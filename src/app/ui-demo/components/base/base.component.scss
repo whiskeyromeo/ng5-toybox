@@ -1,0 +1,26 @@
+@import '../../ui-demo.styles.scss';
+
+.base-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.dog-chip {
+  background-color: #00acc1;
+
+  color: white;
+}
+
+.grid-item {
+  max-width: 350px;
+}
+
+.container {
+  padding: 10px;
+  min-height: 100%;
+  margin: 0 auto !important;
+  overflow: none;
+  position: relative;
+}
+
+

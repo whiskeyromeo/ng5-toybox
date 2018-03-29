@@ -1,0 +1,66 @@
+.links line {
+  stroke: #76963e;
+  stroke-width: 1.0px;
+  stroke-opacity: 1.5;
+}
+
+.nodes circle {
+  stroke: green;
+  stroke-width: 0.5px;
+}
+
+.d3GraphDiv {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#testSvgId {
+  // position: relative;
+  // left: 0;
+  // top: 0;
+
+}
+
+#backgroundId {
+  // height: 500px;
+  // width: 960px;
+}
+
+text {
+  font: bold 12px monospace;
+}
+
+mat-input {
+  width: auto;
+}
+
+.form-container {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  display: inline;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.graph-wrapper {
+  position: relative;
+}
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  /*  pointer-events: none;	This line needs to be removed */
+}
+
+
+
+

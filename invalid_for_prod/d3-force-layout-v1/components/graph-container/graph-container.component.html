@@ -1,0 +1,9 @@
+<div class="graph-wrapper">
+    <form class="form-container" [formGroup]="nodeForm" (ngSubmit)="addNode()">
+        <mat-form-field>
+            <input matInput formControlName="nodeValue" placeholder="This form does nothing" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Submit!</button>
+    </form>
+    <graph class="graph" [nodes]="nodes" [links]="links"></graph>
+</div>

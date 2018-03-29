@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <span mat-button [routerLink]="['']">Ze App</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['']">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </button>
+        <button mat-menu-item [routerLink]="['d3']">
+            <mat-icon>show_chart</mat-icon>
+            <span>D3js Demo</span>
+        </button>
+        <button mat-menu-item [routerLink]="['ui']">
+            <mat-icon>gesture</mat-icon>
+            <span>Material UI Demo</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

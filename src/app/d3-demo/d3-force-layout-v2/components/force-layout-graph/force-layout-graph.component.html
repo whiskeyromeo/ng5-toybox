@@ -1,0 +1,12 @@
+<div class="graph-wrapper">
+    <form class="form-container" [formGroup]="nodeForm" (ngSubmit)="addNode()">
+        <mat-form-field>
+            <input matInput formControlName="baseCount" placeholder="# of Starting Nodes" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput formControlName="stopCount" placeholder="# of Ending Nodes" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Submit!</button>
+    </form>
+    <div #d3GraphDiv class="d3GraphDiv"></div>
+</div>

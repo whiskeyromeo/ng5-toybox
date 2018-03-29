@@ -1,0 +1,28 @@
+<div class="container">
+<ng-masonry-grid
+   [masonryOptions]="{ transitionDuration: '0.8s', gutter: 5 }"
+>
+  <ng-masonry-grid-item class="grid-item" *ngFor="let dog of dogs"> 
+        <mat-card class="">
+          <mat-card-header>
+            <div mat-card-avatar class="base-header-image"></div>
+            <mat-card-title>{{dog.breed}}</mat-card-title>
+            <mat-card-subtitle>{{dog.type}}</mat-card-subtitle>
+          </mat-card-header>
+          <img *ngIf="dog.imgSrc" mat-card-image src="{{dog.imgSrc}}" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              {{dog.description}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-icon-button color="accent"><mat-icon>whatshot</mat-icon></button>
+            <button mat-icon-button color="primary"><mat-icon>share</mat-icon></button>
+          </mat-card-actions>
+      </mat-card>
+  </ng-masonry-grid-item>
+</ng-masonry-grid>
+<br>
+</div>
+<br>
+<br>

@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <span (click)="sidenav.toggle()">Ze App</span>
+  <span class="horizontal-space-filler"></span>
+  <i class="material-icons" (click)="sidenav.toggle()">view_headline</i>
+</mat-toolbar>
+<mat-sidenav-container
+  class="app-sidenav-container"
+>
+  <mat-sidenav #sidenav 
+    class="app-sidenav mat-elevation-z2"
+    mode="side"
+  >
+    <mat-nav-list>
+      <mat-list-item *ngFor="let link of links">
+        <a matLine (click)="getContent(link)">{{link}}</a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="app-sidenav-content">
+    <div class="wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
